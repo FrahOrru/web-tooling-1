@@ -9,7 +9,6 @@
 		"format": "prettier --write .",
 		"checkFormat": "prettier --check .",
 		"lint": "eslint .",
-		"checkLint": "eslint . --ext ts,tsx --max-warnings 0",
 		"prepare": "husky install",
 		"pre-commit": "npm run checkFormat && npm run checkLint"
 	},

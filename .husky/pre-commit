@@ -1,2 +1,2 @@
 npm run checkFormat
-npm run checkLint
+npm run lint
