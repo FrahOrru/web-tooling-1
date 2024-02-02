@@ -8,8 +8,10 @@
 		"start": "node index.js",
 		"format": "prettier --write .",
 		"checkFormat": "prettier --check .",
-		"lint": "eslint . --fix",
-		"prepare": "husky"
+		"lint": "eslint .",
+		"checkLint": "eslint . --ext ts,tsx --max-warnings 0",
+		"prepare": "husky install",
+		"pre-commit": "npm run checkFormat && npm run checkLint"
 	},
 	"author": "",
 	"license": "ISC",
